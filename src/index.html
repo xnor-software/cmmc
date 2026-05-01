@@ -365,15 +365,39 @@
         }
 
         /* ABOUT */
+
         .about {
             background: var(--bg);
         }
 
         .about-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 64px;
+            grid-template-columns: 280px 1fr 1fr;
+            gap: 56px;
             align-items: start;
+        }
+
+        .about-photo img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .about-photo-name {
+            font-family: 'DM Serif Display', serif;
+            font-size: 18px;
+            color: var(--navy);
+            margin-top: 16px;
+        }
+
+        .about-photo-title {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
         }
 
         .about-body {
@@ -414,10 +438,6 @@
             margin-top: 6px;
         }
 
-        .pub-list {
-            margin-top: 8px;
-        }
-
         .pub-item {
             padding: 14px 0;
             border-bottom: 1px solid var(--border-light);
@@ -439,7 +459,6 @@
             color: var(--text-muted);
         }
 
-        /* SERVICES */
         .services {
             background: var(--surface);
         }
@@ -498,7 +517,6 @@
             line-height: 1.6;
         }
 
-        /* CERTIFICATIONS */
         .certifications {
             background: var(--navy);
             color: #fff;
@@ -554,6 +572,7 @@
             margin-top: 8px;
             font-weight: 500;
         }
+
 
         /* CONTACT */
         .contact {
@@ -865,20 +884,40 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about-grid">
+                <!-- Photo column -->
+                <div class="about-photo">
+                    <picture>
+                        <source srcset="assets/portrait.webp" type="image/webp">
+                        <img src="assets/portrait.png" alt="Neal Fennimore, Certified CMMC Assessor">
+                    </picture>
+                    <div class="about-photo-name">Neal Fennimore</div>
+                    <div class="about-photo-title">Founder, XNOR LLC · CCA</div>
+                </div>
+                <!-- Bio column -->
                 <div>
                     <div class="section-label">About Neal Fennimore</div>
                     <h2 class="section-title">DoD Experience.<br>Real-World Expertise.</h2>
                     <div class="about-body">
                         <p>I'm Neal Fennimore, founder of XNOR LLC and a Certified CMMC Assessor with over 15 years
-                            securing enterprise and government environments.</p>
+                            securing
+                            enterprise and government environments.</p>
                         <p>Most recently, I served as a Digital Service Expert at the Defense Digital Service, where I
-                            was the technical lead for the Pentagon's bug bounty program, helped audit ATO processes
-                            across multiple platforms, and integrated SIEM solutions into cloud infrastructure.</p>
+                            was
+                            the
+                            technical lead for the Pentagon's bug bounty program, helped audit ATO processes across
+                            multiple
+                            platforms, and integrated SIEM solutions into cloud infrastructure.</p>
                         <p>As IT Security Director at a DoD contractor, I led CMMC compliance efforts firsthand —
-                            hardening on-prem and Azure infrastructure, deploying SIEM systems, and building business
-                            continuity programs that meet federal requirements.</p>
+                            hardening
+                            on-prem
+                            and Azure infrastructure, deploying SIEM systems, and building business continuity programs
+                            that
+                            meet
+                            federal requirements.</p>
                         <p>I hold an MS in Cybersecurity from NYU (CyberFellow program) and carry the full CompTIA
-                            security stack alongside ISACA's CCA and CCP designations.</p>
+                            security
+                            stack
+                            alongside ISACA's CCA and CCP designations.</p>
                     </div>
                     <div class="stats-row">
                         <div class="stat-card">
@@ -895,27 +934,29 @@
                         </div>
                     </div>
                 </div>
+                <!-- Publications column -->
                 <div>
-                    <div class="section-label" style="margin-top:0">Published Work</div>
+                    <div class="section-label">Published Work</div>
                     <h3
-                        style="font-size:20px; font-family:'DM Serif Display',serif; font-weight:400; color:var(--navy); margin-bottom:8px;">
+                        style="font-size:20px;font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);margin-bottom:8px;">
                         Industry Publications</h3>
-                    <p style="font-size:14px; color:var(--text-muted); margin-bottom:4px;">Recognized voice in
-                        cybersecurity and authentication.</p>
-                    <div class="pub-list">
-                        <div class="pub-item">
-                            <div class="pub-title">Passkeys: A No-Frills Explainer On The Future Of Password-Less
-                                Authentication</div>
-                            <div class="pub-source">Smashing Magazine · October 2023</div>
+                    <p style="font-size:14px;color:var(--text-muted);margin-bottom:4px;">Recognized voice in
+                        cybersecurity
+                        and
+                        authentication.</p>
+                    <div class="pub-item">
+                        <div class="pub-title">Passkeys: A No-Frills Explainer On The Future Of Password-Less
+                            Authentication
                         </div>
-                        <div class="pub-item">
-                            <div class="pub-title">Passkeys: What the Heck and Why?</div>
-                            <div class="pub-source">CSS-Tricks · March 2023</div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-title">Putting Things in Context With React</div>
-                            <div class="pub-source">CSS-Tricks · March 2018</div>
-                        </div>
+                        <div class="pub-source">Smashing Magazine · October 2023</div>
+                    </div>
+                    <div class="pub-item">
+                        <div class="pub-title">Passkeys: What the Heck and Why?</div>
+                        <div class="pub-source">CSS-Tricks · March 2023</div>
+                    </div>
+                    <div class="pub-item">
+                        <div class="pub-title">Putting Things in Context With React</div>
+                        <div class="pub-source">CSS-Tricks · March 2018</div>
                     </div>
                 </div>
             </div>
