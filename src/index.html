@@ -454,9 +454,32 @@
             margin-bottom: 3px;
         }
 
+        .pub-title a {
+            color: var(--navy);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .pub-title a:hover {
+            color: var(--blue-light);
+            border-bottom-color: var(--blue-light);
+        }
+
         .pub-source {
             font-size: 13px;
             color: var(--text-muted);
+        }
+
+        .cert-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .cert-card a:hover .cert-card-name {
+            color: var(--accent-gold);
+            transition: color 0.2s;
         }
 
         .services {
@@ -945,17 +968,20 @@
                         and
                         authentication.</p>
                     <div class="pub-item">
-                        <div class="pub-title">Passkeys: A No-Frills Explainer On The Future Of Password-Less
-                            Authentication
-                        </div>
+                        <div class="pub-title"><a
+                                href="https://www.smashingmagazine.com/2023/10/passkeys-explainer-future-password-less-authentication/"
+                                target="_blank" rel="noopener">Passkeys: A No-Frills Explainer On The Future Of
+                                Password-Less Authentication</a></div>
                         <div class="pub-source">Smashing Magazine · October 2023</div>
                     </div>
                     <div class="pub-item">
-                        <div class="pub-title">Passkeys: What the Heck and Why?</div>
+                        <div class="pub-title"><a href="https://css-tricks.com/passkeys-what-the-heck-and-why/"
+                                target="_blank" rel="noopener">Passkeys: What the Heck and Why?</a></div>
                         <div class="pub-source">CSS-Tricks · March 2023</div>
                     </div>
                     <div class="pub-item">
-                        <div class="pub-title">Putting Things in Context With React</div>
+                        <div class="pub-title"><a href="https://css-tricks.com/putting-things-in-context-with-react/"
+                                target="_blank" rel="noopener">Putting Things in Context With React</a></div>
                         <div class="pub-source">CSS-Tricks · March 2018</div>
                     </div>
                 </div>
@@ -1054,49 +1080,84 @@
                 still.</p>
             <div class="cert-grid">
                 <div class="cert-card">
-                    <div class="cert-card-name">Certified CMMC Assessor (CCA)</div>
-                    <div class="cert-card-org">ISACA</div>
-                    <div class="cert-card-year">April 2026</div>
+                    <a href="https://www.credly.com/badges/f1f72b7b-9ab0-426b-bff7-deb9b93c7834" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">Certified CMMC Assessor (CCA)</div>
+                        <div class="cert-card-org">ISACA</div>
+                        <div class="cert-card-year">April 2026</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">Certified CMMC Professional (CCP)</div>
-                    <div class="cert-card-org">ISACA</div>
-                    <div class="cert-card-year">March 2026</div>
+                    <a href="https://www.credly.com/badges/6a749d25-d958-46bb-8767-4c907de5b85e" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">Certified CMMC Professional (CCP)</div>
+                        <div class="cert-card-org">ISACA</div>
+                        <div class="cert-card-year">March 2026</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">CloudNetX</div>
-                    <div class="cert-card-org">CompTIA</div>
-                    <div class="cert-card-year">July 2024</div>
+                    <a href="https://www.credly.com/badges/6cdccb80-712f-4062-b184-8fcc8610f7bf" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">SecurityX (CASP+)</div>
+                        <div class="cert-card-org">CompTIA</div>
+                        <div class="cert-card-year">June 2024</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">SecurityX (CASP+)</div>
-                    <div class="cert-card-org">CompTIA</div>
-                    <div class="cert-card-year">June 2024</div>
+                    <a href="https://www.credly.com/badges/1635b289-ea5e-438c-bc71-b020f579b16d" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">CySA+</div>
+                        <div class="cert-card-org">CompTIA</div>
+                        <div class="cert-card-year">November 2022</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">CAE-Cyber Operations</div>
-                    <div class="cert-card-org">NSA</div>
-                    <div class="cert-card-year">June 2024</div>
+                    <a href="https://www.credly.com/badges/d3535f4f-7211-491c-867a-97504f890434" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">PenTest+ ce</div>
+                        <div class="cert-card-org">CompTIA</div>
+                        <div class="cert-card-year">June 2021</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">CAE-Cyber Defense</div>
-                    <div class="cert-card-org">NSA</div>
-                    <div class="cert-card-year">June 2024</div>
+                    <a href="https://www.credly.com/badges/7983280e-30b8-44b6-98f9-521686236b2f" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">CloudNetX</div>
+                        <div class="cert-card-org">CompTIA</div>
+                        <div class="cert-card-year">July 2024</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">Cloud+ ce</div>
-                    <div class="cert-card-org">CompTIA</div>
-                    <div class="cert-card-year">November 2024</div>
+                    <a href="https://www.credly.com/badges/aaa69e4a-e8f0-4ef5-8f60-dc65f85bb3e9" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">Cloud+ ce</div>
+                        <div class="cert-card-org">CompTIA</div>
+                        <div class="cert-card-year">November 2024</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">PenTest+ ce</div>
-                    <div class="cert-card-org">CompTIA</div>
-                    <div class="cert-card-year">June 2021</div>
+                    <a href="https://www.credly.com/badges/31a5296f-63ea-4676-964e-e2dd1d7826a7" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">Server+ ce</div>
+                        <div class="cert-card-org">CompTIA</div>
+                        <div class="cert-card-year">November 2024</div>
+                    </a>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-card-name">MS Cybersecurity</div>
-                    <div class="cert-card-org">NYU — CyberFellow</div>
-                    <div class="cert-card-year">December 2023</div>
+                    <a href="https://www.credly.com/badges/f620cb27-d287-405b-bbae-8dcf492d83f0" target="_blank"
+                        rel="noopener">
+                        <div class="cert-card-name">Linux+ ce</div>
+                        <div class="cert-card-org">CompTIA</div>
+                        <div class="cert-card-year">December 2021</div>
+                    </a>
+                </div>
+                <div class="cert-card">
+                    <a href="https://credentials.engineering.nyu.edu/5dffad90-8829-4cdc-9a5e-089f11fdb8ca"
+                        target="_blank" rel="noopener">
+                        <div class="cert-card-name">CAE-Cyber Operations</div>
+                        <div class="cert-card-org">NSA</div>
+                        <div class="cert-card-year">June 2024</div>
+                    </a>
                 </div>
             </div>
         </div>
