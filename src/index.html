@@ -555,17 +555,25 @@
             color: #fff;
         }
 
-        .free-tools .section-label { color: #93c5fd; }
-        .free-tools .section-title { color: #fff; }
-        .free-tools .section-sub { color: rgba(255,255,255,0.55); }
+        .free-tools .section-label {
+            color: #93c5fd;
+        }
+
+        .free-tools .section-title {
+            color: #fff;
+        }
+
+        .free-tools .section-sub {
+            color: rgba(255, 255, 255, 0.55);
+        }
 
         .tool-card {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 48px;
             align-items: center;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             padding: 40px 48px;
             margin-top: 40px;
@@ -582,7 +590,7 @@
 
         .tool-card-body p {
             font-size: 15px;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255, 255, 255, 0.6);
             line-height: 1.7;
             margin-bottom: 24px;
         }
@@ -597,8 +605,8 @@
         .tool-family-tag {
             font-size: 11px;
             color: #93c5fd;
-            background: rgba(59,130,246,0.12);
-            border: 1px solid rgba(59,130,246,0.25);
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.25);
             padding: 3px 10px;
             border-radius: 100px;
             font-weight: 500;
@@ -618,30 +626,54 @@
             transition: opacity 0.2s, transform 0.1s;
         }
 
-        .btn-tool:hover { opacity: 0.88; transform: translateY(-1px); }
-        .btn-tool svg { width: 15px; height: 15px; stroke: var(--navy); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .btn-tool:hover {
+            opacity: 0.88;
+            transform: translateY(-1px);
+        }
+
+        .btn-tool svg {
+            width: 15px;
+            height: 15px;
+            stroke: var(--navy);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
 
         .btn-tool-outline {
             display: inline-flex;
             align-items: center;
             gap: 8px;
             background: transparent;
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             padding: 11px 24px;
             border-radius: 8px;
             font-size: 14px;
             font-weight: 400;
             text-decoration: none;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             margin-left: 12px;
             transition: border-color 0.2s;
         }
-        .btn-tool-outline:hover { border-color: rgba(255,255,255,0.4); }
-        .btn-tool-outline svg { width: 15px; height: 15px; stroke: rgba(255,255,255,0.6); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+        .btn-tool-outline:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-tool-outline svg {
+            width: 15px;
+            height: 15px;
+            stroke: rgba(255, 255, 255, 0.6);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
 
         .tool-preview {
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             padding: 20px;
             font-size: 13px;
@@ -653,13 +685,13 @@
             align-items: center;
             margin-bottom: 16px;
             padding-bottom: 12px;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .tool-preview-title {
             font-size: 12px;
             font-weight: 500;
-            color: rgba(255,255,255,0.5);
+            color: rgba(255, 255, 255, 0.5);
             text-transform: uppercase;
             letter-spacing: 0.08em;
         }
@@ -672,7 +704,7 @@
 
         .sprs-label {
             font-size: 11px;
-            color: rgba(255,255,255,0.35);
+            color: rgba(255, 255, 255, 0.35);
             margin-top: 2px;
             text-align: right;
         }
@@ -682,10 +714,12 @@
             align-items: center;
             gap: 10px;
             padding: 6px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .family-row:last-child { border-bottom: none; }
+        .family-row:last-child {
+            border-bottom: none;
+        }
 
         .family-dot {
             width: 8px;
@@ -696,17 +730,21 @@
 
         .family-name {
             font-size: 12px;
-            color: rgba(255,255,255,0.65);
+            color: rgba(255, 255, 255, 0.65);
             flex: 1;
         }
 
         .family-status {
             font-size: 11px;
-            color: rgba(255,255,255,0.3);
+            color: rgba(255, 255, 255, 0.3);
         }
 
         @media (max-width: 768px) {
-            .tool-card { grid-template-columns: 1fr; gap: 28px; padding: 28px; }
+            .tool-card {
+                grid-template-columns: 1fr;
+                gap: 28px;
+                padding: 28px;
+            }
         }
 
         .certifications {
@@ -996,7 +1034,7 @@
     <section class="hero" id="home">
         <div class="hero-grid">
             <div>
-                <div class="hero-badge">Certified CMMC Assessor (CCA)</div>
+                <div class="hero-badge">Certified Lead CMMC Assessor (LCCA)</div>
                 <h1>CMMC Compliance You Can <em>Trust</em></h1>
                 <p class="hero-sub">Expert assessments and compliance consulting for DoD contractors navigating CMMC
                     2.0. Backed by 15+ years in cybersecurity, direct DoD experience, and hands-on CMMC certification.
@@ -1011,7 +1049,7 @@
                 <div class="cert-item">
                     <div class="cert-dot"></div>
                     <div>
-                        <div class="cert-name">Lead Certified CMMC Assessor (CCA)</div>
+                        <div class="cert-name">Lead Certified CMMC Assessor (LCCA)</div>
                         <div class="cert-org">ISACA · May 2026</div>
                     </div>
                 </div>
@@ -1096,7 +1134,7 @@
                         <img src="assets/portrait.png" alt="Neal Fennimore, Certified CMMC Assessor">
                     </picture>
                     <div class="about-photo-name">Neal Fennimore</div>
-                    <div class="about-photo-title">Founder, XNOR LLC · CCA</div>
+                    <div class="about-photo-title">Founder, XNOR LLC · LCCA</div>
                 </div>
                 <!-- Bio column -->
                 <div>
@@ -1111,11 +1149,12 @@
                             the
                             technical lead for the Pentagon's bug bounty program, helped audit ATO processes across
                             multiple
-                            platforms, and integrated SIEM solutions into cloud infrastructure.</p>
+                            platforms, and integrated security solutions into cloud infrastructure.</p>
                         <p>As IT Security Director at a DoD contractor, I led CMMC compliance efforts firsthand —
                             hardening
                             on-prem
-                            and Azure infrastructure, deploying SIEM systems, and building business continuity programs
+                            and Azure infrastructure, deploying security systems, and building business continuity
+                            programs
                             that
                             meet
                             federal requirements.</p>
@@ -1258,12 +1297,15 @@
         <div class="container">
             <div class="section-label">Free Resources</div>
             <h2 class="section-title">Built for Contractors.<br>Free to Use.</h2>
-            <p class="section-sub">Tools I built to help defense contractors understand and track their compliance posture before a formal assessment.</p>
+            <p class="section-sub">Tools I built to help defense contractors understand and track their compliance
+                posture before a formal assessment.</p>
 
             <div class="tool-card">
                 <div class="tool-card-body">
                     <h3>NIST SP 800-171 Rev 2<br>Compliance Tracker</h3>
-                    <p>A free, browser-based tool to walk through all 110 controls across 14 NIST SP 800-171 R2 families. Track your implementation status, view your running SPRS score, and generate a compliance summary — all stored locally in your browser with no account required.</p>
+                    <p>A free, browser-based tool to walk through all 110 controls across 14 NIST SP 800-171 R2
+                        families. Track your implementation status, view your running SPRS score, and generate a
+                        compliance summary — all stored locally in your browser with no account required.</p>
                     <div class="tool-families">
                         <span class="tool-family-tag">Access Control</span>
                         <span class="tool-family-tag">Audit &amp; Accountability</span>
@@ -1274,11 +1316,16 @@
                         <span class="tool-family-tag">+ 8 more families</span>
                     </div>
                     <a href="https://cmmc.jaktool.com/" target="_blank" rel="noopener" class="btn-tool">
-                        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                        </svg>
                         Open the Tool
                     </a>
                     <a href="https://github.com/JAKTOOL/cmmc" target="_blank" rel="noopener" class="btn-tool-outline">
-                        <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                        </svg>
                         View on GitHub
                     </a>
                 </div>
